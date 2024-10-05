@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-color: #8e8e8e #fff;
+    scrollbar-width: thin;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #2d2e32;
+}
+
+a {
+    text-decoration: none;
+    color: #2d2e32;
+}
+
+.nav-custom {
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    font-size: 1.1rem;
+    padding: 25px 40px 25px 50px;
+}
+
+.hero-main {
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+.hero {
+    min-height: 100vh;
+}
+
+.img-hero {
+    width: 50%;
+    height: 50%;
+    border-radius: 40%;
+}
+
+.height-50rem {
+    height: 50rem;
+}
+
+.hero-span {
+    display: flex;
+    cursor: pointer;
+    gap: 1.3rem;
+    margin: 2.5rem 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero-span > a {
+    color: #2d2e32;
+    text-decoration: none;
+}
+
+.fs-xxl {
+    font-size: 3.5rem;
+    line-height: 1.6;
+}
+
+.hero-texto {
+    color: #555;
+    font-family: Mulish,sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.row a {
+    font-family: 'Poppins', sans-serif;
+}
+
+.col-lg-12 button{
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+@keyframes morph {
+    0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 70% 30% 50% 50%/30% 70% 30% 70%;
+    }
+    100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  }
+  
+  .hero-img {
+      -webkit-animation: morph 8s ease-in-out infinite;
+      animation: morph 8s ease-in-out infinite;
+      background-image: url('/img/perfil01.jpg');
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 3px solid #2d2e32;
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      height: 35rem;
+      position: relative;
+      transition: all 1s ease-in-out;
+      width: 35rem;
+  }
+  
+
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 6.5rem;
+        padding: 0 1.7rem;
+    }
+    .h1-hero {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .hero-span {
+        margin-top: 1rem;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero-img {
+        height: 25rem;
+    }
+}
+
+
+.portfolio-item {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+border-radius: 8px;
+}
+
+.portfolio-item img {
+transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+transform: scale(1.1);
+}
+
+.portfolio-item h3, p{
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    font-weight: 600;
+}
+
+.text-after::after{
+    content: '';
+    width: 12%;
+    height: 6px;
+    background-color: #f9004d;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    border: 3px solid red;
+    
+}
+.hire-after::after{
+    content: '';
+    width: 13%;
+    height: 3px;
+    background-color: #f9004d;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    border: 3px solid greenyellow;
+    
+}
