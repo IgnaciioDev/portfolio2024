@@ -28,4 +28,3 @@ document.addEventListener('DOMContentLoaded', function() {
       return regex.test(email);
     }
 });
-  
