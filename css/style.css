@@ -83,6 +83,21 @@ a {
     font-family: 'Poppins', sans-serif;
 
 }
+@keyframes fillProgressBar {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: var(--progress-width);
+    }
+    
+
+  }
+
+
+  .progress-bar {
+    animation: fillProgressBar 2s ease-in-out forwards;
+}
 
 @keyframes morph {
     0% {
@@ -155,21 +170,21 @@ transform: scale(1.1);
     content: '';
     width: 12%;
     height: 6px;
-    background-color: #f9004d;
+    background-color: #8e8e8e;
     margin: auto;
     display: block;
     margin-top: 10px;
-    border: 3px solid red;
+    border: 3px solid #8e8e8e;
     
 }
 .hire-after::after{
     content: '';
     width: 13%;
     height: 3px;
-    background-color: #f9004d;
+    background-color: #8e8e8e;
     margin: auto;
     display: block;
     margin-top: 10px;
-    border: 3px solid greenyellow;
+    border: 3px solid #8e8e8e;
     
 }
