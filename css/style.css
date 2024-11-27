@@ -157,7 +157,7 @@ transition: transform 0.3s ease;
 }
 
 .portfolio-item:hover img {
-transform: scale(1.1);
+transform: scale(1.03);
 }
 
 .portfolio-item h3, p{
